@@ -1,8 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2111a-f-2000x1500_0.png');
-    background-size: cover;
+    background-color: grey;
     background-attachment: fixed;
     color: white;
     margin: 0;
