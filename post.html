@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My World Series Trip</title>
+    <link rel="stylesheet" href="../IS 201 Project Website/css/scratchstyles.css">
+</head>
+<body>
+    <header id="top" class="header">
+        <h1>My World Series Trip</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="resume.html">Resume</a> | 
+            <a href="post.html">My World Series Trip</a> | 
+            <a href="moodbooster.html">Mood Booster</a>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#game">Game Experience</a></li>
+                <li><a href="#favorites">Favorite Moments</a></li>
+                <li><a href="#video">Video Highlights</a></li>
+                <li><a href="#chart">Interactive Chart</a></li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <h2 id="game">Game 2 of the World Series this year was a BLAST!</h2>
+            <p>Not only did the Dodgers win, but I also got to spend the day with family at the game.</p>
+
+            <h2 id="favorites">My Favorite Parts of the Game</h2>
+            <ol>
+                <li>The Environment
+                    <ul>
+                        <li>There is nothing quite like watching the Dodgers beat the Yankees while chewing sunflower seeds and eating peanuts.</li>
+                        <li>The stadium felt alive as we stood for the majority of the game.</li>
+                        <li>The tension between Dodger fans and Yankees fans was high, only creating adrenaline for us all.</li>
+                    </ul>
+                </li>
+                <li>Family
+                    <ul>
+                        <li>My wife's first ever playoff game was a success, and she was smiling the whole time. Especially after we got her a shirt!</li>
+                        <li>Celebrating with my dad brought back memories of high school and biting our nails on the couch as we watched the Dodgers.</li>
+                    </ul>
+                </li>
+            </ol>
+            <img src="../IS 201 Project Website/assets/img/dodgers-game-bg.jpg" width="500" height="320" alt="My family at the game">
+            
+            <h2 id="video">Watch This!</h2>
+            <div class="video">
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/bOhlDQpKgsc" 
+                title="Freddie Freeman Walk-off grand slam (LIVE CROWD REACTION)" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <h2 id="chart">Interactive Tableau Chart</h2>
+            <div class="tableau-container">
+                <div class='tableauPlaceholder' id='viz1734062378141'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Budget Controlling Cockpit' 
+                                src='https://public.tableau.com/static/images/Bu/BudgetControlling_17340615476120/Home/1_rss.png' 
+                                style='border: none;' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='BudgetControlling_17340615476120/Home' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/Bu/BudgetControlling_17340615476120/Home/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1734062378141');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '800px'; /* Adjusted width */
+                vizElement.style.height = '450px'; /* Adjusted height */
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+
+    <footer class="footer">
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+</body>
+</html>

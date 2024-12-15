@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/stsci-h-p2111a-f-2000x1500_0.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    background-color: royalblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    background-color: rgba(0, 0, 139, 0.8); /* Navy with transparency */
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.sidebar h2 {
+    color: lightblue;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content */
+.content {
+    flex: 3;
+    background-color: rgba(65, 105, 225, 0.9); /* Royal Blue with transparency */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    background-color: grey;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    color: white;
+}
+
+.footer a {
+    color: white; /* Always white by default */
+    text-decoration: none; /* No underline by default */
+}
+
+.footer a:link,
+.footer a:visited {
+    color: white; /* Maintain white color for visited and unvisited links */
+}
+
+.footer a:hover {
+    color: white; /* Keeps white on hover */
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.footer a:active {
+    color: white; /* Keeps white even on active click */
+}
+
+/* Tableau Section Styling */
+.tableau-container {
+    text-align: left; /* Center the graph */
+    max-width: 1000px; /* Restrict the maximum width */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.tableau-container iframe {
+    width: 100%; /* Make it responsive */
+    height: 700px; /* Set a consistent height */
+    border: none; /* Remove the border from the iframe */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Booster</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f9; color: #333; text-align: center; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 50px auto; padding: 20px; background: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px; }
+        h1 { color: #4CAF50; }
+        button { padding: 10px 20px; font-size: 16px; color: white; background: #4CAF50; border: none; border-radius: 5px; cursor: pointer; margin-top: 20px; }
+        button:hover { background: #45a049; }
+        .quote-box { margin-top: 20px; padding: 20px; font-size: 18px; color: #555; border-left: 4px solid #4CAF50; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boost Your Mood!</h1>
+        <nav>
+            <a href="index.html">Home</a> | <a href="resume.html">Resume</a> | <a href="post.html">My World Series Trip</a> | <a href="moodbooster.html">Restart</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mood Booster</h1>
+        <p>Need a little positivity? Click the button below to get a random inspirational quote or joke!</p>
+        <button onclick="generateMood()">Boost My Mood</button>
+        <div id="quoteBox" class="quote-box" style="display:none;"></div>
+    </div>
+    <script>
+        const quotes = [
+            "Keep your face always toward the sunshine—and shadows will fall behind you. - Walt Whitman",
+            "The best way to get started is to quit talking and begin doing. - Walt Disney",
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "Life is what happens when you're busy making other plans. - John Lennon",
+            "Why don’t scientists trust atoms? Because they make up everything!",
+            "Believe you can and you're halfway there. - Theodore Roosevelt",
+            "Why couldn’t the leopard play hide and seek? Because he was always spotted."
+        ];
+        function generateMood() {
+            const quoteBox = document.getElementById('quoteBox');
+            quoteBox.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+            quoteBox.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
